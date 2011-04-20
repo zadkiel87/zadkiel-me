@@ -1,0 +1,33 @@
+Date: 16 Avril 2011
+Categories: javascript
+
+# JavaScript, ce mal aimé
+
+*C'est article est à destination de personne de niveau novice.*
+
+> Purée, mais JavaScript c'est de la merde !
+
+J'avoue que de tel pensé de haine pur m'ont déjà envahit, dans d'intense phase d'incompréhension devant mes scripts JS. Et je suis sur que je ne suis pas le seul.
+
+Et bien, vous savez quoi...Cela ne m'arrive presque plus. Et mes explications sur comment j'y suis parvenu, pourront peut-être vous épargner quelques cheveux blanc.
+
+Si je voulais faire court, il suffit d'une chose pour arrêter de se prendre la tête avec JavaScript: apprendre le langage JavaScript. Mais vous allez me dire que c'est un peu facile de ma part, donc revenons en au chose qui fâche.
+
+D'abord ce nom : JAVAScript! Hum, que vient faire JAVA dans tout ca. Et bien rien. De la bouche de wikipedia, un simple enjeux marketing au moment du choix final du nom du langage à permit ce désastre...Donc sans hésitation, il n'y a pas de rapprochement possible à faire entre JAVA et javascript (Allez, ils sont tout les deux orienté objets, mais ça s'arrête la).
+
+Une fois cela en tête on peut passer à la seconde chose qui 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
