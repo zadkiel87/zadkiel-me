@@ -3,52 +3,25 @@ Categories: javascript
 
 # JavaScript, ce mal aimé
 
-*C'est article est à destination de personne de niveau novice.*
-
 > Purée, mais JavaScript c'est de la merde !
 
 J'avoue que de telles pensées de haine pur m'ont déjà envahit, dans d'intense phase d'incompréhension devant mes scripts JS. Et je suis sur que je ne suis pas le seul.
 
 Et bien, vous savez quoi...Cela ne m'arrive presque plus. Et mes explications sur comment j'y suis parvenu, pourront peut-être vous épargner quelques cheveux blanc.
 
-Si je voulais faire court, il suffit d'une chose pour arrêter de se prendre la tête avec JavaScript: apprendre le langage JavaScript. Dixit [Douglas Crockford](http://fr.wikipedia.org/wiki/Douglas_Crockford), [JavaScript est le langage le moins comprit au monde](http://www.crockford.com/javascript/javascript.html "The World's Most Misunderstood Programming Language"). Cela date de 2001, mais les choses n'ont pas tellement évoluées. En effet, faute de connaitre le langage, on essaye de reproduire des principes que l'on connait bien en Java/Php/..., mais la plupart du temps cela ne fonctionne pas (Ou en tout cas, pas comme attendu).
+Si je voulais faire court, il suffit d'une chose pour arrêter de se prendre la tête avec JavaScript: **apprendre le langage JavaScript**. Dixit [Douglas Crockford](http://fr.wikipedia.org/wiki/Douglas_Crockford "Douglas Crockford"), [JavaScript est le langage le moins comprit au monde](http://www.crockford.com/javascript/javascript.html "The World's Most Misunderstood Programming Language"). Cela date de 2001, mais les choses n'ont pas tellement évoluées. 
 
-D'abord ce nom : JAVAScript! Hum, que vient faire JAVA dans tout ca. Et bien rien. De la bouche de wikipedia, un simple enjeux marketing au moment du choix final du nom du langage à permit ce désastre...Donc sans hésitation, il n'y a pas de rapprochement possible à faire entre JAVA et javascript (Allez, ils sont tout les deux orienté objets, mais ça s'arrête la).
+Et pourquoi est il mal compris ?
 
-Une fois cela en tête on peut passer à la seconde chose qui trouble les nouveaux venues: l'utilisation quasi exclusive de JavaScript pour manipuler le DOM. Et ce, le plus souvent avec un framework tel que jQuery. On se dit alors que l'on a pas vraiment besoin de connaitre le langage, que des copier-coller suffiront sans plus chercher à comprendre. Sans compter sur la documentation des premiers résultats de google, qui restent d'une grande médiocrité, malgré l'effort fournit par Mozilla.
+Principalement à cause de l'utilisation quasi-exclusive qu'on en fait: **pour manipuler le DOM**. Et ce, le plus souvent avec un framework tel que [jQuery](http://jquery.com/ "jQuery"). On se dit alors que l'on a pas vraiment besoin de connaitre le langage, que des **copier-coller** suffiront sans plus chercher à comprendre. Et c'est la que les problèmes commencent. 
 
-Ces confusions entrainent souvent une utilisation de JavaScript qui donne des résultats, mais avec un code de mauvaise qualité. Et cela s'aggrave quand la quantité de code devient importantes: le fameux code spaghetti.
+En effet, faute de connaitre le langage, **on essaye de reproduire des principes que l'on connait bien en Java/Php/**..., mais la plupart du temps cela ne fonctionne pas (Ou en tout cas, pas comme attendu). Sans compter sur la documentation des premiers résultats de google, qui restent d'une grande médiocrité, [malgré l'effort fournit par Mozilla](http://hacks.mozilla.org/2010/10/promotejs-a-worldwide-call-for-improving-js-documentation-visibility/ "Promote js"). 
+
+[ ![JavaScript Array .pop](http://static.jsconf.us/promotejsv.gif "JavaScript Array .pop") ](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array)
+
+Ces confusions entrainent souvent une utilisation de JavaScript qui donne des résultats, mais avec **un code de mauvaise qualité**. Et cela s'aggrave quand la quantité de code devient importante: **le fameux code spaghetti**.
 
 Mais tout n'est pas perdu. Je vous propose ci-dessous une liste de sujets qui me paraissent importants à bien connaitre pour utiliser JavaScript correctement. Ces spécificités du langage qui sont la plupart du temps méconnus. Vous allez surement en apprendre plus que ce que vous croyez, et je vous jures que ça vaut le coup d'oeil.
-
-### Class-based vs. prototype-based languages ###
-
-La où Java/PHP/Ruby sont des langages dit de type *Class-based*, JavaScript est lui de type *prototype-based*. Concrètement qu'est ce que ça change ?
-
-Dans un langage *Class-based*, on distinct deux entités: les classes et les instances. La *Classe* définit toutes les propriétés et les méthodes qui vont caractérisés un certain *Object*. L'*Instance*, est l'instantiation de la classe. Une instance a exactement les propriétés de sa classe parent: pas plus, pas moins. Frodon est ainsi une instantiation de la classe Hobbit.
-
-http://stackoverflow.com/questions/186244/what-does-it-mean-that-javascript-is-a-prototype-based-language
-http://www.crockford.com/javascript/javascript.html
-
-
-
-
-
-### Namespace ###
-
-
-### Object literal ###
-
-
-#### Array ####
-
-
-### Prototype ###
-
-
-
-
-
 
 
 
