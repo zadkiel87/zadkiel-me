@@ -8,15 +8,14 @@ $border-style: 1px dashed $border-color
   padding: 0
 
 body
-  background: $bg-color
+  background: url("/images/background.jpg") repeat scroll left top #E2E7E6
   color: $base-color
   font: ($base-font * 1.05) Georgia, serif
   line-height: $vertical-rhythm
-  text-shadow: 0 1px 0 #FFFFFF
-
-
+  
 h1, h2, h3, h4, h5, h6
   font-family: "helvetica neue"
+  text-shadow: 0 1px 0 #FFFFFF
 h1
   @include adjust-font-size($h1-scale, 0.6, 0.4)
   font-weight: bold
@@ -44,7 +43,7 @@ blockquote
   padding: 0 $base-vertical-margin
 
   font-style: italic
-  color: $base-color + #555
+  color: $meta-color
 
 pre
   padding: ($vertical-rhythm / 2) 1em
@@ -60,56 +59,114 @@ ol li
   list-style: none
 
 a
-  color: #5E9092
+  color: $link-color
   text-decoration: none
 
+a:visited
+  color: $visited-link-color
+  
 a:hover
-  color: #96C0C2
+  color: $hover-link-color
+  
+a:active
+  color: $active-link-color
+
+#color-header
+  height: 10px
+  width: 100%
+  background-image: url("/images/37-a.png"), url("/images/29-a.png")
+  position: fixed
+  margin: 0
+  padding: 0
+  
+#polar_bear
+  background-image: url("/images/polar_bear.png")
+  height: 200px
+  width: 200px
+  margin-left: -30px
+  margin-top: 30px
+  margin-bottom: 20px
+  
+#container
+  width: 985px
+  margin: 0 auto
+
+#content
+  padding-left: 100px
+  padding-right: 50px
 
 /**** BREADCRUMB ****/
 
 nav.breadcrumb
   color: $base-color
-  padding: 0.5em 0
+  padding-left: 100px
   font-size: 0.909em
+  
+  a
+    text-decoration: underline
 
 /**** LEFT COLUMN ****/
 
 #logo_bio_nav
   float: left
   position:  fixed
-  width: 38%
+  width: 163px
   height: 100%
-  border-right: 1px solid #9BB6B8
-  background: $bg-left-color
-  text-align: center
+  text-align: left
+  border-right: 1px solid #C9CCCC
+  padding-left: 15px
+  padding-right: 15px
+  
+  #bio
+    margin-top: 20px
+    font-size: 96%
   
   h2
     font-family: Georgia, serif
     margin: 5% 0
-    
+  
+  .categories
+  
   .feed, .categories
     text-align: left
-    margin-left: 50%
-    
-    ul
-      margin-left: 30px
-    
+        
+    ul li
+      border-top: 1px solid #FFFFFF
+      border-bottom: 1px solid #B8C7C7
+      letter-spacing: 1px
+      
+      &:last-child
+        border-bottom: none
+      &:first-child
+        border-top: none
     a
-      color: #4E7779
+      color: $link-color
+      font-family: "helvetica neue"
+      font-weight: bold
+      text-transform: uppercase
+      text-shadow: 0 1px 0 #FFFFFF
     
+    a:visited
+      color: $visited-link-color
+
     a:hover
-      color: #6C9D9F
+      color: $hover-link-color
+
+    a:active
+      color: $active-link-color
 
 /**** LAYOUT ****/
 article, aside, footer, header, nav, section
   display: block
 
 #pages_breadcrumb
-  padding-left: 42%
-  padding-right: 15%
+  border-left: 1px solid #F5F5F5
+  width: 777px
+  float: right
+  padding-right: 15px
   
   nav.breadcrumb
+    margin-top: 100px
     ul
       margin: 0
     li
@@ -121,6 +178,31 @@ article, aside, footer, header, nav, section
         content: ""
         
 article
+
+  a
+    color: $header-color
+  
+  a:visited
+    color: darken($header-color, 5%)
+  
+  a:hover
+    color: darken($header-color, 10%)
+
+  a:active
+    color: darken($header-color, 20%)
+    
+  header[role=main] h1
+    @include adjust-font-size($h1-scale, 1.5, 0.5)
+    
+  h1
+    @include adjust-font-size($h2-scale, 1.5, 0.5)
+    text-transform: uppercase
+    letter-spacing: 1px
+    color: $header-color
+  
+    a
+      border-bottom: 3px solid $header-color
+    
   img
     max-width: 100%
     margin-bottom: $base-vertical-margin
@@ -137,11 +219,16 @@ article
       padding: 0
 
   footer
-    border-top: $border-style
+    border-top: 1px solid #B8C7C7
     p.meta
       @include adjust-font-size(0.909, 0.1, 1.9)
       font-style: italic
       color: $meta-color
+      border-top: 1px solid white
+      margin: 0
+      margin-bottom: 30px
+    a
+      text-decoration: underline
 
 // Pages of content
 article[role="main"]
@@ -165,17 +252,10 @@ section.articles
       ul li
         list-style: disc
 
-  header[role=main] h1
-    @include adjust-font-size($h1-scale, 1.5, 0.5)
-  header h1
-    @include adjust-font-size($h2-scale, 1.5, 0.5)
-
   article
     p.read_more
       @include adjust-font-size(1, 0, 0)
       margin-top: -$base-vertical-margin
-    footer
-      border-top: none
 
 nav.categories
   h1
@@ -188,3 +268,9 @@ nav.categories
       margin: 0 0 0 1.25em
     & > ul
       @include adjust-font-size(0.909, 0, 0)
+
+footer.branding
+  padding-left: 100px
+  
+  a
+    text-decoration: underline
