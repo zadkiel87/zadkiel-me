@@ -1,3 +1,4 @@
+= p @page
 %nav.breadcrumb
   - display_breadcrumbs
 
@@ -13,5 +14,5 @@
         = haml :summaries, :layout => false, :locals => { :pages => @page.articles, :heading => :h3 }
 
     = haml :page_meta, :layout => false, :locals => { :page => @page }
-
-  = haml :comments, :layout => false
+  - unless @page.filename == "content/pages/index.haml"
+    = haml :comments, :layout => false

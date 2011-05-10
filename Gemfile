@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'nesta', '0.9.4'
+gem 'nesta', '0.9.5'
 gem 'capistrano', '2.5.19'
 
 
