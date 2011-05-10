@@ -3,7 +3,7 @@ Categories: javascript
 
 # JavaScript, ce mal aimé
 
-<img src="http://www.skorks.com/wp-content/uploads/2010/04/javascript.jpg" alt="Javascript Vs Javascript the good part" title="Javascript Vs Javascript the good part" height="250px" style="margin-top: 10px"/>
+<img src="http://www.skorks.com/wp-content/uploads/2010/04/javascript.jpg" alt="Javascript Vs Javascript the good part" title="Javascript Vs Javascript the good part" height="250px" style="margin-top: 10px;"/>
 
 > Purée, mais JavaScript c'est de la merde !
 
@@ -23,8 +23,7 @@ En effet, faute de connaitre le langage, **on essaye de reproduire des principes
 
 Ces confusions entrainent souvent une utilisation de JavaScript qui donne des résultats, mais avec **un code de mauvaise qualité**. Et cela s'aggrave quand la quantité de code devient importante: **le fameux code spaghetti**.
 
-Mais tout n'est pas perdu. Je vous propose ci-dessous une liste de sujets qui me paraissent importants à bien connaitre pour utiliser JavaScript correctement. Ces spécificités du langage qui sont la plupart du temps méconnues. Vous allez sûrement en apprendre plus que ce que vous croyez, et je vous jure que ça vaut le coup d'oeil.
-
+Mais tout n'est pas perdu. Je vais tenter dans de prochains articles de traiter des sujets qui me paraissent importants à bien connaitre pour utiliser JavaScript correctement. Ces spécificités du langage qui sont la plupart du temps méconnues. Vous allez sûrement en apprendre plus que ce que vous croyez, et je vous jure que ça vaut le coup d'oeil.
 
 
 
