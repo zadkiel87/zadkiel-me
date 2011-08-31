@@ -1,5 +1,4 @@
 source 'http://rubygems.org'
-
 gem 'nesta', '0.9.8'
 gem 'capistrano', '2.5.19'
 
