@@ -1,5 +1,7 @@
 Date: 7 August 2011
 Categories: productivity
+Summary: Quand on se retrouve avec des temps d'exécution de build Maven qui dépassent les 10 minutes, on oublie rapidement de regarder l'output de la console, pour se consacrer à la place à une quelconque tâche de procrastination. Pour éviter ce problème, pourquoi ne pas jouer un son lorsque le build est terminé ?
+
 
 # Jouer un son à la fin d'un build Maven
 
