@@ -85,7 +85,6 @@ a:active
   width: 200px
   margin-left: -30px
   margin-top: 30px
-  margin-bottom: 20px
   display: block
   
 #container
@@ -119,19 +118,24 @@ nav.breadcrumb
   padding-right: 15px
   
   #bio
-    margin-top: 20px
     font-size: 96%
   
   h2
     font-family: Georgia, serif
     margin: 5% 0
   
-  .categories
+  #friends_site
+    margin-top: 15px
   
-  .feed, .categories
-    text-align: left
+  .categories
+    margin-top: 25px
+      
+  .feed, .categories, #friends_site
+    text-align: center
+    color: #0A3D54
         
     ul li
+      text-align: left
       border-top: 1px solid #FFFFFF
       border-bottom: 1px solid #B8C7C7
       letter-spacing: 1px
@@ -156,6 +160,9 @@ nav.breadcrumb
     a:active
       color: $active-link-color
 
+  .feed
+    text-align: left
+    
 /**** LAYOUT ****/
 article, aside, footer, header, nav, section
   display: block
@@ -165,6 +172,11 @@ article, aside, footer, header, nav, section
   width: 777px
   float: right
   padding-right: 15px
+  
+  .main_title
+    text-align: center
+    text-shadow: 0 1px 0 #FFFFFF
+    @include adjust-font-size(3, 1.5, 0.5)
   
   nav.breadcrumb
     margin-top: 100px
