@@ -1,0 +1,65 @@
+Date: 15 february 2012
+Categories: javascript
+
+#L'hoisting en JavaScript
+
+Même si vous ne connaissez pas le terme *Hoisting*, inconsciement vous
+faites peut-être avec tous les jours quand vous codez en JS.
+
+Faisons un petit quizz:  
+**Quizz 1:**
+
+    :::js
+    plop();
+    function plop(){
+        alert('coin');
+    }
+
+Si vous exécutez ce code, quel est le résultat ?  
+`'coin'` / `plop is not a function` / `ReferenceError: plop is not defined`
+
+Et maintenant pour ce code ?  
+**Quizz 2**:
+
+    :::js
+    plop();
+    var plop = function(){
+        alert('coin');
+    };
+
+Trouvé? Réponses:  
+**Quizz 1**: `'coin'` [Tester](http://jsfiddle.net/fRWnx/ "Quizz 1")  
+**Quizz 2**: `plop is not a function` [Tester](http://jsfiddle.net/AskQH/ "Quizz 2") (Voir l'erreur dans firebug)
+
+Et si vous avez trouvé, avez vous une explication?
+
+En voici une. En JavaScript les fonctions déclarées et les variables
+sont toujours déplacées(*Hoisted*) au début de leurs scope JavaScript par
+l'interpréteur.
+
+Si on reprend le code du **Quizz 1** après que l'interpréteur soit passé
+dessus:
+
+    :::js
+    function plop(){
+        alert('coin');
+    }
+    plop();
+
+La fonction déclarée et son contenu sont *hoisted*, rendant l'appel de
+la fonction accessible avant sa déclaration.
+
+Pour le **Quizz 2**
+
+    :::js
+    var plop;
+    plop();
+    plop = function(){
+        alert('coin');
+    };
+
+La variable est *hoisted*, mais attention seulement la déclaration, la fonction n'est donc pas encore assignée au
+moment de l'appel, d'où l'erreur `plop is not a function`.
+
+J'espère que la connaissance de l'*hoisting* vous permettra d'éviter
+certaines surprises en JavaScript.
